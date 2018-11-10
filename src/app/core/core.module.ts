@@ -7,13 +7,18 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
+import { HeaderComponent } from './components/header/header.component';
+import { MaterialModule } from '../material/material.module';
+import { RouterModule } from '@angular/router';
 
-export const components = [];
+export const components = [HeaderComponent];
 
 @NgModule({
   declarations: [...components],
   imports: [
     CommonModule,
+    RouterModule,
+    MaterialModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
