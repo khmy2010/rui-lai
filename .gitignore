@@ -40,3 +40,6 @@ Thumbs.db
 
 # SSL credentials
 /ssl
+
+# credentials
+src/config/
